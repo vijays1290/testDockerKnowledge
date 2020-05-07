@@ -12,7 +12,7 @@ deploy :
     app: docker
     region: us-west-2
     env: Docker-env
-    secret_access_key: $aws_secret_key
+    secret-access-key: $aws_secret_key
     secret_key_id: $aws_secret_id
     provider: elasticbenstalk
     on:
