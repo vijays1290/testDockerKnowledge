@@ -12,8 +12,8 @@ deploy :
     app: docker
     region: us-west-2
     env: Docker-env
-    secret-access-key: $AWS_ACCESS_KEY
-    access_key_id: $AWS_SECREAT_KEY
+    secret-access-key: $AWS_SECREAT_KEY
+    access_key_id: $AWS_ACCESS_KEY
     provider: elasticbeanstalk
     on:
         branch: master
