@@ -7,14 +7,14 @@ before_install:
       - docker build -t vijay01/docker .
 
 deploy :
-    bucket_path: Docker
+    bucket_path: docker
     bucet_name: elasticbeanstalk-us-west-2-277569349877
     app: docker
     region: us-west-2
     env: Docker-env
     secret-access-key: $AWS_ACCESS_KEY
     access_key_id: $AWS_SECREAT_KEY
-    provider: elasticbenstalk
+    provider: elasticbeanstalk
     on:
         branch: master
 
