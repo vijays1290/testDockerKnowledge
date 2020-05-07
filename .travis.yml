@@ -1,0 +1,18 @@
+sudo: required
+language: generic
+
+before_install:
+      - docker build -t vijay01/docker
+
+deploy :
+bucket_path: Docker
+bucet_name: elasticbeanstalk-us-west-2-277569349877
+app: docker
+region: us-west-2
+env: Docker-env
+secret_access_key: $aws_secret_key
+secret_key_id: $aws_secret_id
+provider: elasticbenstalk
+    on:
+        master
+
